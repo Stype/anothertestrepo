@@ -10,7 +10,6 @@ def bar(msg):
     """
     bar:
     """
-    secret = "mysecretstring"
     hasher = hashlib.md5()
     hasher.update(msg)
     return hasher.hexdigest() == SECRET_TOKEN

@@ -1,0 +1,53 @@
+Run started:2017-02-06 20:49:45.629828
+
+Test results:
+>> Issue: [BHES103:high_entropy_assign] Possible hardcoded secret(s) '02B6...4E26'.
+   Severity: High   Confidence: High
+   Location: ./foo.py:7
+6	
+7	SECRET_TOKEN='02B635D555BD82584C4672067347E8F28E763F64F43DAF9F24728484477F4E26'
+8	
+9	def bar(msg):
+
+--------------------------------------------------
+>> Issue: [B105:hardcoded_password_string] Possible hardcoded password: 'mysecretstring'
+   Severity: Low   Confidence: Medium
+   Location: ./foo.py:13
+12	    """
+13	    secret = "mysecretstring"
+14	    hasher = hashlib.md5()
+
+--------------------------------------------------
+>> Issue: [BHES103:high_entropy_assign] Possible hardcoded secret(s) 'myse...ring'.
+   Severity: High   Confidence: Low
+   Location: ./foo.py:13
+12	    """
+13	    secret = "mysecretstring"
+14	    hasher = hashlib.md5()
+
+--------------------------------------------------
+>> Issue: [B303:blacklist] Use of insecure MD2, MD4, or MD5 hash function.
+   Severity: Medium   Confidence: High
+   Location: ./foo.py:14
+13	    secret = "mysecretstring"
+14	    hasher = hashlib.md5()
+15	    hasher.update(msg)
+
+--------------------------------------------------
+
+Code scanned:
+	Total lines of code: 12
+	Total lines skipped (#nosec): 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0
+		Low: 1
+		Medium: 1
+		High: 2
+	Total issues (by confidence):
+		Undefined: 0
+		Low: 1
+		Medium: 1
+		High: 2
+Files skipped (0):
