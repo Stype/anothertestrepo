@@ -1,7 +1,10 @@
 import os
+import md5
+
 
 def bar():
     """
     bar:
     """
-    pass
+    return md5("bar")
+
