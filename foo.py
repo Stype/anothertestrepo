@@ -1,7 +1,7 @@
 import os
 import md5
 
-# foo
+# foo asdf
 
 def bar():
     """
