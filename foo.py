@@ -1,3 +1,3 @@
 import hashlib
 
-hashlib.md5('secret')
+hashlib.sha512('secret')
