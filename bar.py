@@ -1,4 +1,4 @@
 
-security_token = 'AKIA1234567890'
+# security_token = 'AKIA1234567890'
 
 
