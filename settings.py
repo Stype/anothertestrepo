@@ -1,1 +1,1 @@
-security_token = 'AKIA1234567890'
+security_token_b = 'AKIA1234567890'
