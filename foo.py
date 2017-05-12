@@ -1,4 +1,5 @@
 import json
 
-def foo:
+def foo():
+    secret_token = "AKIAfoobar"
     return "bar"
