@@ -1,7 +1,7 @@
 import hashlib
 
 # secret`token
-token = 'AKIASOMETHING'
+token = 'AKIASOMETHING' # nosec
 
 def foo():
     m = hashlib.md5('goo')
