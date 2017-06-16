@@ -1,6 +1,6 @@
 import hashlib
 
-# secret`
+# secret`token
 token = 'AKIASOMETHING'
 
 def foo():
