@@ -225,6 +225,32 @@
               "id": "9d8c4a69-afbd-42d4-98be-01093ddd88cf",
               "z": 6,
               "attrs": {}
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 475,
+                "y": 92
+              },
+              "angle": 0,
+              "id": "4d570984-e47b-43bb-9c85-ff548b716cb9",
+              "z": 7,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Bar"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
             }
           ]
         },
